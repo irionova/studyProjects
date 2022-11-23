@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="surveyForm_styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
     <title>Survey Form</title>
   </head>
   <body>
@@ -9,18 +9,43 @@
     <p id="descriprion">Thank you for taking the time to help us improve the platform</p>
     <main>
       <form id="survey-form">
-        <fieldset><label for="name"> <input required id="name"/></label>
-        <label for="email"> <input required id="email"/></label>
-        <label for="age"> <input id="age"/></label>
-        <label for=""> <selector></selector>></label>
+        <fieldset><label for="username">Name <input required id="username" type="text" placeholder="Enter your name" name="username"/></label>
+        <label for="email" >Email <input required id="email" type="email" placeholder="Enter your email" name="email"/></label>
+        <label for="age">Age (option) <input id="age" placeholder="6-105" type="number" min="6" max="105"  name="age" ></label>
+        <label for="dropdown">Which option best describes your current role?
+          <select name="dropdown" id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Preffer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
 </fieldset>
-
-
+        <fieldset>
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label for="defin"><input type="radio" name="recommend" id="defin">Definitely</label>
+        <label  for="maybe"><input type="radio" name="recommend" id="maybe">Maybe</label>
+        <label for="notsure"><input type="radio" name="recommend"id="notsure">Not sure</label></fieldset>
+        <fieldset>
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label for="front-end"><input type="checkbox" id="front-end" name=""/>Front-end Projects</label>
+          <label for="back-end"><input type="checkbox" id="back-end"/>Back-end Projects</label>
+          <label for="data-vis"><input type="checkbox" id="data-vis"/>Data Visualization</label>
+          <label for="challenges"><input type="checkbox" id="challenges"/>Challenges</label>
+          <label for="opensource"><input type="checkbox" id="opensource"/>Open Source Community</label>
+          <label for="gitterhelp"><input type="checkbox" id="gitterhelp"/>Gitter help rooms</label>
+          <label id="videos"><input type="checkbox"/>Videos</label>
+          <label><input type="checkbox"/>City Meetups</label>
+          <label><input type="checkbox"/>Wiki</label>
+          <label><input type="checkbox"/>Forum</label>
+          <label><input type="checkbox"/>Additional Courses</label>
+</fieldset>
+        <fieldset><label>Any comments or suggestions? <textarea cols="30" rows="5" placeholder="Enter your comment here" ></textarea></label>
+        </fieldset>
         <fieldset></fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
-      <label></label>
+      <label><input type="submit" value="submit"></label>
       </form>
     </main>
   </body>
