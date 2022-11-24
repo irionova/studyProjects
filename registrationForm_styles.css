@@ -1,53 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
 body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-color: #1b1b32;
-  color: #f5f6f7;
-  font-family: Tahoma;
-  font-size: 16px;
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
 }
 
-h1, p {
-  margin: 1em auto;
-  text-align: center;
-}
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 1rem ridge rgb(255, 115, 115);
+  }
 
 form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
+    background-color: #ffc9c9;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
-fieldset {
-  border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #3b3b4f;
-}
 
-fieldset:last-of-type {
-  border-bottom: none;
-}
-
-label {
-  display: block;
-  margin: 0.5rem 0;
-}
-
-input,
-textarea,
-select {
-  margin: 10px 0 0 0;
-  width: 100%;
-  min-height: 2em;
-}
-
-input, textarea {
-  background-color: #0a0a23;
-  border: 1px solid #0a0a23;
-  color: #ffffff;
+.bold {
+  font-weight: 800;
 }
 
 .inline {
@@ -56,21 +40,38 @@ input, textarea {
   vertical-align: middle;
 }
 
+fieldset {
+
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: none;
+
+   }
+   
+label {
+    display: block;
+    margin: 1rem 0;
+  }
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  min-height: 2em;
+}
+
+p {
+  font-style: italic;
+}
+
 input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #3b3b4f;
-  border-color: white;
+  width: 25%;
+  object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #ffaaaa;
+  border-color: rgb(255, 84, 84);
   min-width: 300px;
-}
-
-input[type="file"] {
-  padding: 1px 2px;
-}
-
-a {
-  color: #dfdfe2;
 }
