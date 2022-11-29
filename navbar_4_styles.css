@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://sun9-70.userapi.com/impg/3cs7vbEYYDx_qtSlpmUSDNFs0F3K5rFNjeap1g/bK7FkYKR12M.jpg?size=1920x1080&quality=96&sign=8eb50ab6eb4e98140cb26010fddfdd4e&type=album);
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+}
+.colored{
+    color: #ea1538;
+}
+
+nav ul li{
+    list-style-type: nope;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+
+button{
+    border: none;
+    background:#ea1538;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15;
+    transition: 0.3s;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
