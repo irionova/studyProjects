@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="descriprion">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <main>
+      <form id="survey-form">
+        
+        <fieldset>
+          <label for="username">Name <input required id="username" type="text" placeholder="Enter your name" name="username"/></label>
+          <label for="email" >Email <input required id="email" type="email" placeholder="Enter your email" name="email"/></label>
+          <label for="age">Age (option) <input id="age" placeholder="6-105" type="number" min="6" max="105"  name="age" ></label>
+          <label for="dropdown">Which option best describes your current role?
+            <select name="dropdown" id="dropdown">
+              <option value="">Select current role</option>
+              <option value="1">Student</option>
+              <option value="2">Full time job</option>
+              <option value="3">Full time learner</option>
+              <option value="4">Preffer not to say</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        
+        <fieldset>
+          <p>Would you recommend <span class="bold">freeCodeCamp</span> to a friend?</p>
+          <label for="defin"><input type="radio" name="recommend" id="defin"> Definitely</label>
+          <label  for="maybe"><input type="radio" name="recommend" id="maybe"> Maybe</label>
+          <label for="notsure"><input type="radio" name="recommend"id="notsure"> Not sure</label>
+        </fieldset>
+        
+        <fieldset>
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label class="inline" for="front-end"><input type="checkbox" id="front-end" name=""/> Front-end Projects</label>
+          <label class="inline" for="back-end"><input type="checkbox" id="back-end"/> Back-end Projects</label>
+          <label class="inline" for="data-vis"><input type="checkbox" id="data-vis"/> Data Visualization</label>
+          <label class="inline" for="challenges"><input type="checkbox" id="challenges"/> Challenges</label>
+          <label class="inline" for="opensource"><input type="checkbox" id="opensource"/> Open Source Community</label>
+          <label class="inline" for="gitterhelp"><input type="checkbox" id="gitterhelp"/> Gitter help rooms</label>
+          <label class="inline" for="videos"><input type="checkbox"/> Videos</label>
+          <label class="inline" for="meetups"><input id="meetups" type="checkbox"/> City Meetups</label>
+          <label class="inline" for="wiki"><input id="wiki" type="checkbox" /> Wiki</label>
+          <label class="inline" for="forum"><input id="forum" type="checkbox"/> Forum</label>
+          <label class="inline" for="courses"><input id="courses" type="checkbox"/> Additional Courses</label>
+        </fieldset>
+        
+        <fieldset>
+          <label for="comments">Any comments or suggestions? 
+            <textarea id="comments" cols="30" rows="5" placeholder="Enter your comment here" ></textarea>
+          </label>
+        </fieldset> 
+        
+        <input class="bold" type="submit" value="submit">
+      </form>
+    </main>
+  </body>
+</html>
