@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .conteiner{
+      display: grid;
+      grid-template: repeat(8, 200px)/200px 200px 200px;
+      grid-gap: 20px;
+      justify-content: center;
+    }
+    .item{
+      padding: 10px;
+      border: 1px solid black;
+      color: white;
+      font-weight: 600;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .Linear_top_to_bottom{
+      background-image: linear-gradient(red, blue);
+    }
+    .Linear_left_to_right{
+      background-image: linear-gradient(to right, red, blue);
+    }
+    .Linear_Diagonal{
+      background-image: linear-gradient(to bottom right, red, blue);
+    }
+    .Linear_angle_diagonal{
+      background-image: linear-gradient(20deg, red, blue);
+    }
+    .Linear_multiple_color{
+      background-image: linear-gradient(to bottom right, blue, violet, purple, red)
+    }
+    .Radial_default{
+      background-image: radial-gradient(red, violet, blue);
+    }
+    .Radial_special{
+      background-image: radial-gradient(red 5%, violet 15%, blue)
+    }
+    .Radial_circle_or_ellipse{
+      background-image: radial-gradient(Ellipse, red,violet,  blue)
+    }
+    .Conic_Three_Colors{
+      background-image: conic-gradient(red, yellow, green);
+    }
+    .Conic_Three_Colors_and_Degrees{
+      background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+      border-radius: 50%;
+    }
+    .Conic_Pie_Charts{
+      background-image: conic-gradient(red, yellow, green, blue, black);
+      border-radius: 50%;
+    }
+    .Conic_Specified_Center_Position{
+      background-image: conic-gradient(at 100% 20%, red, yellow, green);
+    }
+    .Conic_Repeating_Radial_Gradient{
+      background-image: repeating-radial-gradient(blue 10%, violet 30%)
+    }
+  </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="item item1 Linear_top_to_bottom">1
+      <p>Linear Gradient Top to Bottom (this is default)</p>
+    </div>
+    <div class="item item2 Linear_left_to_right">2
+      <p>Linear Gradient Left to Right</p>
+    </div>
+    <div class="item item3 Linear_Diagonal">3
+      <p>Linear Gradient Diagonal</p>
+    </div>
+    <div class="item item4 Linear_angle_diagonal">4
+      <p>Linear Gradient Diagonal with special angle 20deg</p>
+    </div>
+    <div class="item item5 Linear_multiple_color">5
+      <p>Linear Gradient multiple color</p>
+    </div>
+    <div class="item item6 Radial_default">6
+      <p>Radial Gradient Default</p>
+    </div>
+    <div class="item item7 Radial_special">7
+      <p>Radial Gradient Differently Spaced Color Stops</p>
+    </div>
+    <div class="item item8 Radial_circle_or_ellipse">8
+      <p>Radial Gradient Circle/Ellipse</p>
+    </div>
+    <div class="item item9 Conic_Three_Colors">9
+      <p>Conic Gradients Three Colors</p>
+    </div>
+    <div class="item item10 Conic_Three_Colors_and_Degrees">10
+      <p>Conic Gradients Three Colors and Degrees</p>
+    </div>
+    <div class="item item11 Conic_Pie_Charts">11
+      <p>Conic Gradients Pie Charts</p>
+    </div>
+    <div class="item item12 Conic_Specified_Center_Position">12
+      <p>Conic Gradients Specified Center Position</p>
+    </div>
+    <div class="item item13 Conic_Repeating_Radial_Gradient">13
+      <p>Conic Gradients Repeating Radial Gradient</p>
+    </div>
+  </div>
+</body>
+</html>
