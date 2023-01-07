@@ -13,16 +13,33 @@
   --icons-font: white;
   --grad-border-from: #00d2ff;
   --grad-border-to: #000824;
+  --bg_aside: white;
+  --line: #c9cbd3;
+  --payment: #000724;
+  --features: black;
 }
 
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html{
+  height: 100%;
+}
 body{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: relative;
   min-width: 1191px;
   min-height: 926px;
-  background-image: radial-gradient(#002d60, #000824 87%);
+  background-image: radial-gradient(var(--bg_lighter), var(--grad-border-to) 87%);
   background-size: cover;
+}
+
+main{
+  flex: 1 1 auto;
 }
 
 header{
@@ -33,14 +50,15 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+.head-item{
+  margin: 29px;
+}
+
 
 .logo {
   text-transform: uppercase;
-  color: var(--logo-color);
-
-  
+  color: var(--logo-color); 
 }
-
 .sound {
   font-size: 24.43px;
   font-weight: bold;
@@ -54,28 +72,16 @@ header{
   font-size: 16.52px;
   letter-spacing: -1px;
 }
-
 .store::before{
   content: "";
   position: absolute;
-  left: ;
   bottom: -1px;
   width: 45px;
   height: 2px;
-
   background: var(--logo-color);
   z-index: -1;
 }
 
-.store-line{
-  background-color: var(--logo-color);
-  height: 2px;
-  margin-top: -2px;
-
-}
-.head-item{
-  margin: 29px;
-}
 
 .icons{
   display: flex;
@@ -109,7 +115,7 @@ header{
   background-color: var(--logo-color);
 }
 
-aside{
+.right{
   text-transform: uppercase;
   color: var(--icons-font);
   display: grid;
@@ -120,10 +126,6 @@ aside{
   top: 300px;
   left: 20px;
 }
-
-.aside-title{
-}
-
 .first-row{
   letter-spacing: 0.23em;
   font-size: 12.46px;
@@ -136,9 +138,159 @@ aside{
   font-weight: 300;
   display: block;
 }
-
-.container{
+.colors-box{
+  padding: 20px;
   border: 2px solid;
   border-image: linear-gradient(var(--grad-border-from), var(--grad-border-to)) 10;
 }
+.color{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 6px;
+}
 
+
+.left{
+  position: absolute;
+  right: 0px;
+  top: 200px;
+}
+.models-box{
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 18px;
+  width: 81px;
+  height: 585px;
+  background: var(--bg_aside);
+}
+.model{
+  text-align: center;
+  border-bottom: 1px var(--line) solid;
+  margin: 4px;
+  padding: 12px 0;
+}
+.model:last-child{
+  border: none;
+}
+.arrow{
+  text-align: center;
+  margin: 20px
+}
+.arrow i{
+  color: var(--logo-color);
+  font-size: 26px;
+}
+
+
+footer{
+  display: grid;
+  grid-template-columns: 291px 1fr;
+  grid-template-rows: 159px;
+  position: relative;
+  
+}
+.payment{
+  background: var(--payment);
+  color: var(--icons-font);
+  text-align: center;
+}
+.payment p{
+  padding: 25px;
+  font-size: 14.28px;
+  font-weight: 300;
+}
+/*
+.payment p::before{
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+  width: 114px;
+  height: 1px;
+  background: var(--logo-color);
+}
+*/
+.pay-options{
+  font-size: 40px;
+}
+.features{
+  background: var(--features);
+  color: var(--icons-font);
+  padding: 25px 86px;
+}
+.features h1{
+  text-transform: uppercase;
+  font-size: 14.28px;
+  letter-spacing: 3px;
+}
+hr{
+  position: absolute;
+  bottom: -1px;
+  width: 45px;
+  height: 2px;
+  background: var(--logo-color);
+  z-index: -10;
+}
+.features ul{
+  display: flex;
+  gap: 60px;
+}
+.features li{
+  font-size: 13.14px;
+  line-height: 14.42px;
+  margin: 12px 0;
+}
+li::before{
+  content:"";
+  transform: rotate(-0.62turn);
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  border: none;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;  /* угол состоит из половины ширины (50% от 10em = 10em : 2 = 5em) и всей высоты (100% от 5em = 5em) */
+  background: var(--logo-color);
+}
+
+
+.product{
+  display: flex;
+  width: 600px;
+  margin: 116px auto 0 auto;
+}
+.content{
+  width: 231px;
+}
+.product p{
+  font-size: 11.31px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: var(--icons-font);
+  margin-bottom: 34px;
+  padding-left: 6px;
+}
+/*
+.product p::before{
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  z-index: -1;
+  width: 114px;
+  height: 1px;
+  background: var(--logo-color);
+}
+*/
+.other-products{
+  display: flex;
+}
+.other-product img{
+  height: 60px;
+  width: 60px;
+}
+.lettering{
+  margin: -24px -38px;
+}
+.selected-product-picture{
+  margin: -18px;
+}
