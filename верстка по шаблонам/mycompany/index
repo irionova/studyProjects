@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>MyCompany</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="odd" id="home">
+    <div class="logo"><p >Mycompany</p></div>
+    <nav>
+      <ul>
+        <li class="navitem"><a href="#Home">Home</a></li>
+        <li class="navitem"><a href="#about">about</a></li>
+        <li class="navitem"><a href="#services">services</a></li>
+        <li class="navitem"><a href="#portfolio">portfolio</a></li>
+        <li class="navitem"><a href="#testimonials">testimonials</a></li>
+        <li class="navitem"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="start odd">
+      <h1><span class="thin">Welcome on</span> <span class="colored">mycompany</span></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aspernatur architecto labore iure asperiores! Perspiciatis?</p>
+    </section>
+
+    <section class="about even" id="about">
+      <h1><span>About Us</span></h1>
+      <div class="about-box">
+        <img src="img/macbook.png">
+        <div class="about-right">
+          <h2>some words <span class="bold">about us</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reiciendis, impedit saepe ea, excepturi dicta harum consectetur eveniet dolorum quidem est, molestiae hic ipsum ullam corporis tempore commodi fugiat unde?</p>          
+          <ul>
+            <li><span class="bold">Mission -</span>Lorem ipsum dolor sit amet.</li>
+            <li><span class="bold">Skills -</span>Lorem ipsum dolor sit amet.</li>
+            <li><span class="bold">Clients -</span>Lorem ipsum dolor sit amet.</li>
+          </ul></div>
+        
+      </div>
+      
+    </section>
+
+    <section class="team odd">
+      <h1><span>our team</span></h1>
+      <div class="team-box">
+        <div class="member">
+          <img src="" alt="">
+          <h5></h5>
+          <p class="profi"></p>
+          <p class="personality"></p>
+        </div>
+        <div class="member">
+          <img src="" alt="">
+          <h5></h5>
+          <p class="profi"></p>
+          <p class="personality"></p>
+        </div>
+        <div class="member">
+          <img src="" alt="">
+          <h5></h5>
+          <p class="profi"></p>
+          <p class="personality"></p>
+        </div>
+        <div class="member">
+          <img src="" alt="">
+          <h5></h5>
+          <p class="profi"></p>
+          <p class="personality"></p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="services even" id="services">
+      <h1><span>Our services</span></h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum placeat accusamus aliquid quos deleniti, nemo sequi excepturi repellat aliquam ipsum, cumque culpa distinctio. Laborum sunt laboriosam soluta qui est voluptatem corporis obcaecati quasi. Voluptates alias sapiente vero cupiditate vitae ipsa, eos nobis pariatur sequi, animi doloremque sed, neque magnam eveniet.</p>
+      <div class="services-box">
+        <div class="service">
+          <img src="" alt="">
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="service">
+          <img src="" alt="">
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="clients odd">
+      <h1>some of <span>our clients</span></h1>
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </section>
+
+    <section class="portfolio even" id="portfolio">
+      <h1>take a look at <span>our work</span></h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi necessitatibus reprehenderit fugiat unde ullam beatae quo autem nihil eum culpa obcaecati saepe nam porro officia odio magnam quidem hic, distinctio dolorem incidunt minus molestias facilis. Quas repellendus vero, ducimus excepturi, vitae dicta temporibus odio, explicabo quidem iusto reprehenderit magnam! Accusantium!</p>
+      <div class="gallery">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+    </section>
+
+    <section class="testimonials odd" id="testimonials">
+      <h1><span>our clients'</span> testimonials</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aspernatur architecto labore iure asperiores! Perspiciatis?</p>
+ 
+    </section>
+    <section class="contact even" id="contact">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vitae. Quia iure voluptas nihil non, repudiandae vitae dolores libero, quis aliquam odio modi minima dolorum beatae nostrum. Assumenda natus doloremque veniam totam cumque mollitia enim id delectus aspernatur! Error, unde odit. Nostrum maxime dolor, molestiae placeat a modi voluptatem! Asperiores.</p>
+
+      <form action="">
+        <fieldset>
+          <label for="name">Name<input type="text" id="name" name="name"></label>
+          <label for="email">Email address<input type="email" id="email" name="email"></label>
+          <label for="message">Message<textarea id="message" name="message"></textarea></label>
+        </fieldset>
+
+      </form>
+    </section>
+  </main>
+
+
+
+  <footer class="odd">
+    <div class="socialinks">
+      <a href=""><img src="" alt=""></a>
+      <a href=""><img src="" alt=""></a>
+      <a href=""><img src="" alt=""></a>
+      <a href=""><img src="" alt=""></a>
+      <a href=""><img src="" alt=""></a>
+    </div>
+  </footer>
+  <script src=""script.js></script>
+</body>
+</html>
